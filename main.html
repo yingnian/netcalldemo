@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>云信测试</title>
+    <!--可无视-->
+    <!--<link rel="stylesheet" type="text/css" href="css/normalize.css" />-->
+    <!--<link rel="stylesheet" type="text/css" href="css/demo.css">-->
+    <!--核心-->
+    <link rel="stylesheet" href="CSS/main.css">
+</head>
+
+<body>
+<script src="SDK/js/NIM_Web_NIM_v6.1.2.js"></script>
+<script src="SDK/js/NIM_Web_WebRTC_v6.1.2.js"></script>
+
+
+<script src="js/md5.js"></script>
+<script src="js/util.js"></script>
+<script src="js/netcall.js"></script>
+<script src="js/main.js"></script>
+
+<div class="mainwrapper">
+    <div class="box">
+        <div id="LocalContainer1"></div>
+        <div id="Remotecontainer1"></div>
+    </div>
+
+    <div class="toolbar">
+        <input name="oppaccid" type="text" id="oppaccid" value="请输入对方的accid" size="40"/>
+        <button class="btn" id="startCallBtn">发起通话</button>
+        <button class="btn btn-red" id="hangupBtn">结束通话</button>
+        <!--<button class="btn btn-red">Button 3</button>-->
+        <!--<button class="btn btn-green">Button 4</button>-->
+    </div>
+
+</div>
