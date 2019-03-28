@@ -183,9 +183,14 @@ function showAcceptUI(obj,accid) {
     //展示用户信息的界面
     callerInfoDiv.style.display = 'block';
     getUserInfoAndDisp(obj,accid);
-    //展示挂断按钮
-    calleeBtn.style.display = 'block';
-    hangupBtnCalled.style.display = 'block';
+    //展示接听及挂断按钮
+    if(accid){
+        calleeBtn.style.display = 'block';
+
+    } else {
+        hangupBtnCalled.style.display = 'block';
+    }
+
 }
 
 /**
